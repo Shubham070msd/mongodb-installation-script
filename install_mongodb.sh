@@ -19,3 +19,12 @@ sudo apt-get update
 
 # Install MongoDB 6.0 packages
 sudo apt-get install -y mongodb-org=6.0.15 mongodb-org-database=6.0.15 mongodb-org-server=6.0.15 mongodb-org-mongos=6.0.15 mongodb-org-tools=6.0.15
+
+echo "MongoDB 6.0.15 installation complete!"
+
+# Enable and start the MongoDB service
+sudo systemctl enable mongod
+sudo systemctl start mongod
+
+# Check the status of the MongoDB service
+sudo systemctl status mongod
