@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install necessary packages
-sudo apt-get install gnupg curl
+sudo apt-get install gnupg curl -y
 
 # Download MongoDB GPG key and save it
 curl -fsSL https://www.mongodb.org/static/pgp/server-6.0.asc | \
